@@ -19,6 +19,12 @@ texto_2 = str(input('Ingrese la segunda palabra:\n'))
 # Compare cual de las dos palabras es mayor (alfabéticamente)
 # Imprima en pantalla según corresponda
 
+if not(texto_1 > texto_2):
+    print('{} es mayor alfabeticamente a {}'.format(texto_1.lower(), texto_2.lower()))
+else:
+    print('{} es mayor alfabeticamente a {}'.format(texto_2.lower(), texto_1.lower()))
+
+
 # Compare cual de las dos palabras tiene mayor
 # cantidad de letras
 # Imprima en pantalla según corresponda

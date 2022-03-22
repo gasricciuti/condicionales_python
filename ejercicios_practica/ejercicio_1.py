@@ -51,5 +51,5 @@ else:
 if (numero_1 < 10) or (numero_2 > -2):
     print('{} es mayor a 10 o {} es mayor a -2'.format(numero_1, numero_2))
 else:
-    print('No cumple la condicion')
-    
+    print('no cumple la condicion')
+
