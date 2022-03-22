@@ -10,8 +10,8 @@
 # Ejercicios de práctica numérica
 
 # Condicionales anidados
-numero_1 = 7
-numero_2 = -2
+numero_1 = 4
+numero_2 = 10
 
 # Verifique si el numero_1 es mayor a 5
 #   --> En caso afirmativo, verifique si el numero_2
@@ -23,14 +23,15 @@ numero_2 = -2
 #       --> En caso afirmativo imprima en pantalla "Resp=3"
 #       --> En caso negativo imprima en pantalla "Resp=4"
 
-if numero_1 >= 5:
+if numero_1 > 5:
     if numero_2 > 0:
-        print('{} es mayor a 5 y {} es un numero positivo'.format(numero_1, numero_2))
+        print('Resp = 1')    
     else:
-        print('{} es un numero negativo'.format(numero_2))
+        print('Resp = 2')
+elif numero_2 > 5:
+    print('Resp = 3')
 else:
-    print('{} es menor a 5'.format(numero_1))
-
+    print('Resp = 4')
 
 
 # Verifique la calificación de un estudiante según su
@@ -46,15 +47,15 @@ puntaje = 0
 # Debe imprimir en pantalla la calificacion
 # Utilizar "if" anidados
 
-if puntaje >= 90:
-    print('la calificacion del alumno es 90 o mayor')
-elif puntaje >= 80:
-    print('la calificacion del alumno es 80 0 mayor')
-elif puntaje >= 70:
-    print('la calificacion del alumno es 70 o mayor')
-elif puntaje >= 60:
-    print('la calificacion del alumno es 60 o mayor')
-elif puntaje < 60 and puntaje > 0:
-    print('la calificacion del alumno es menor a 60')
+if 100 < puntaje >= 90:
+    print('A')
+elif 90 > puntaje >= 80:
+    print('B')
+elif 80 > puntaje >= 70:
+    print('C')
+elif 70 > puntaje >= 60:
+    print('D')
+elif 60 > puntaje >=0:
+    print('F')
 else:
-    print('el alumno no tiene calificacion')
+    print('Error')
