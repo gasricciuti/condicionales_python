@@ -1,7 +1,7 @@
 # Condicionales [Python]
 # Ejercicios de práctica
 
-# Autor: Inove Coding School
+# Autor: Ricciuti Gaston
 # Version: 2.0
 
 # IMPORTANTE: NO borrar los comentarios
@@ -50,5 +50,3 @@ else:
 # Esta pregunta estará repetida en el Campus para que puedan
 # responder.
 # NOTA: La respuesta no se encuentra en el apunte, sino en Google ;)
-
-'''Porque'''
