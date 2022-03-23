@@ -31,6 +31,17 @@ else:
 # ¿Cuál de las nuevas variables es mayor?
 # Imprima en pantalla según corresponda
 
+texto_1 = int(5)
+texto_2 = int(7)
+
+if texto_1 > texto_2:
+    print('{} es mayor a {}'.format(texto_1, texto_2))
+elif not(texto_1 >= texto_2):
+    print('{} es menor a {}'.format(texto_1, texto_2))
+else:
+    print('los textos son iguales')
+
+
 # Para pensar!
 # ¿Por qué cree que texto_2 es mayor a texto_1?
 # Siendo números tiene sentido, pero son caracteres, texto,
