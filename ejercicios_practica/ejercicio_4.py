@@ -19,8 +19,8 @@ texto_2 = '7'
 
 if texto_1 > texto_2:
     print('{} es mayor a {} alfabeticamente'.format(texto_1, texto_2))
-elif not(texto_1 >= texto_2):
-    print('{} es mayor a {} alfabeticamente'.format(texto_1, texto_2))
+elif texto_2 > texto_1:
+    print('{} es mayor a {} alfabeticamente'.format(texto_2, texto_1))
 else:
     print('los textos son iguales')
 
@@ -31,15 +31,15 @@ else:
 # ¿Cuál de las nuevas variables es mayor?
 # Imprima en pantalla según corresponda
 
-texto_1 = int(5)
-texto_2 = int(7)
+numero_1 = int(texto_1)
+numero_2 = int(texto_2)
 
-if texto_1 > texto_2:
-    print('{} es mayor a {}'.format(texto_1, texto_2))
-elif not(texto_1 >= texto_2):
-    print('{} es menor a {}'.format(texto_1, texto_2))
+if numero_1 > numero_2:
+    print('{} es mayor a {}'.format(numero_1, numero_2))
+elif numero_2 > numero_1:
+    print('{} es mayor a {}'.format(numero_2, numero_1))
 else:
-    print('los textos son iguales')
+    print('los numeros son iguales')
 
 
 # Para pensar!
