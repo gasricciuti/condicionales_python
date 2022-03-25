@@ -33,3 +33,46 @@ contenido.
 
 print('Ejercicios de práctica con cadenas')
 # Empezar aquí la resolución del ejercicio
+
+palabra_1 = str(input('Ingrese la primera palabra:\n'))
+palabra_2 = str(input('Ingrese la segunda palabra:\n'))
+palabra_3 = str(input('Ingrese la tercera palabra:\n'))
+
+print('''Ingrese alguna opcion:
+1) Ordenar por orden alfabetico
+2) Ordenar por la cantidad de letras''')
+opcion = int(input('Opcion: '))
+
+if opcion == 1:
+    if ((palabra_1 > palabra_2) and (palabra_1 > palabra_3)) and (palabra_2 > palabra_3):
+        ordenar_alfa = palabra_1
+        print('Ordenado de mayor a menor:\n',palabra_1, palabra_2, palabra_3)
+    elif ((palabra_1 > palabra_2) and (palabra_1 > palabra_3)) and (palabra_2 < palabra_3):
+        ordenar_alfa = palabra_1
+        print('Ordenado de mayor a menor:\n',palabra_1, palabra_3, palabra_2)
+    elif ((palabra_2 > palabra_3) and (palabra_2 > palabra_1)) and (palabra_1 > palabra_3):
+        ordenar_alfa = palabra_2
+        print('Ordenado de mayor a menor:\n',palabra_2, palabra_1, palabra_3)
+    elif ((palabra_3 > palabra_1) and (palabra_3 > palabra_2)) and (palabra_1 > palabra_2):
+        ordenar_alfa = palabra_3
+        print('Ordenado de mayor a menor:\n',palabra_3, palabra_1, palabra_2)
+    else:
+        print('Ordenado de mayor a menor:\n',palabra_3, palabra_2, palabra_1)  
+else:
+    opcion == 2
+
+cant_palabra_1 = (len(palabra_1))
+cant_palabra_2 = (len(palabra_2))
+cant_palabra_3 = (len(palabra_3))
+
+if ((cant_palabra_1 > cant_palabra_2) and (cant_palabra_1 > cant_palabra_3)) and (cant_palabra_2 > cant_palabra_3):
+    print('Ordenado de mayor a menor:\n',palabra_1, palabra_2, palabra_3)
+elif ((cant_palabra_1 > cant_palabra_2) and (cant_palabra_1 > cant_palabra_3)) and (cant_palabra_2 < cant_palabra_3):
+    print('Ordenado de mayor a menor:\n',palabra_1, palabra_3, palabra_2)
+elif ((cant_palabra_2 > cant_palabra_3) and (cant_palabra_2 > cant_palabra_1)) and (cant_palabra_1 > cant_palabra_3):
+    print('Ordenado de mayor a menor:\n',palabra_2, palabra_1, palabra_3)
+elif ((cant_palabra_3 > cant_palabra_1) and (cant_palabra_3 > cant_palabra_2)) and (cant_palabra_1 > cant_palabra_2):
+    print('Ordenado de mayor a menor:\n',palabra_3, palabra_1, palabra_2)
+else:
+    print('Ordenado de mayor a menor:\n',palabra_3, palabra_2, palabra_1)
+
